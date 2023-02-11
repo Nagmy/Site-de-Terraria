@@ -1,0 +1,20 @@
+@font-face {
+    font-family: "Andy";
+    src: url("../Fonts/Andy.ttf");
+}
+
+body {
+    font-family: 'Andy';
+    background-image: url("../Background/overworldforest.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.about{
+    background:rgba(57, 91, 137,0.5);
+    width: fit-content;
+    padding: 8px;
+}
+h3{
+    margin: 0;
+}
