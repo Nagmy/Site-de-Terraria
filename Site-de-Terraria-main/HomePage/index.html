@@ -10,12 +10,17 @@
     href="https://play-lh.googleusercontent.com/BoAvMI_6JGNRBp_3gFaVuLuqW_4J-rjtbR_giKFoJRvZmDiPtDlnLMur9cT7sTTfeos"
     type="image/x-icon" />
   <link rel="stylesheet" href="style.css" />
+  <script src="life.js" type="text/javascript"></script>
 </head>
 
 <body>
-  <img src="../Logos/Title.png" alt="Terraria logo standard">
-  <div class="about">
-    <h3>An encyclopedia about Terraria aiming help you finding items, craftings, and much more.</h3>
+  <div class="logo">
+    <img src="../Logos/Title.png" alt="Terraria logo standard">
+  </div>
+  <div class="centerlized">
+    <div class="about">
+      <h3>An encyclopedia about Terraria aiming help you finding items, craftings, and much more.</h3>
+    </div>
   </div>
   <hr>
   <ol>
@@ -33,31 +38,52 @@
   <table>
     <tr>
       <th>
-        Items
+        <div class="head1">
+        <h3>Items</h3>
+        </div>
       </th>
     </tr>
     <tr>
       <td>
-        • <a href="">Weapons</a> 
+        <button class="button" onclick="document.getElementById('box1').style=display='block'">• Weapons</button>
+        <div id="box1" class="myboxes">
+          •<a href=""> Melee</a>
+        <br>
+        •<a href=""> Ranged</a>
+        <br>
+        •<a href=""> Magic</a>
+        <br>
+        •<a href=""> Summoner</a>
+        </div>
       </td>
       <td>
-        • <a href="">Vanity</a> 
+        • <a href="">Vanity</a>
       </td>
       <td>
-        • <a href="">Miscellaneous</a> 
+        • <a href="">Miscellaneous</a>
       </td>
     </tr>
     <tr>
       <td>
-        • <a href="">Ammos</a> 
+        <div class="popup" onclick="clickAmmos()">• Ammos
+          <span class="popuptext" id="Ammos">
+            <a href="https://www.google.com/">Guns</a>
+            <br>
+            <a href="https://www.google.com/">Bows</a>
+            <br>
+            <a href="https://www.google.com/">Rockets</a>
+            <br>
+            <a href="https://www.google.com/">Darts</a>
+          </span>
+        </div>
       </td>
       <td>
-        • <a href="">Dyes</a> 
+        • <a href="">Dyes</a>
       </td>
     </tr>
     <tr>
       <td>
-        • <a href="">Armors</a> 
+        • <a href="">Armors</a>
       </td>
       <td>
         • <a href="">Potions</a>
@@ -65,7 +91,7 @@
     </tr>
     <tr>
       <td>
-        • <a href="">Acessories</a> 
+        • <a href="">Acessories</a>
       </td>
       <td>
         • <a href="">Minions</a>
@@ -73,7 +99,7 @@
     </tr>
     <tr>
       <td>
-        • <a href="">Tools</a> 
+        • <a href="">Tools</a>
       </td>
       <td>
         • <a href="">Mounts</a>
@@ -81,13 +107,26 @@
     </tr>
     <tr>
       <td>
-        • <a href="">Blocks</a> 
+        • <a href="">Blocks</a>
       </td>
       <td>
         • <a href="">Pets</a>
       </td>
     </tr>
   </table>
-</body>
 
+
+<div id="box2" class="myboxes">
+  Pop out interface
+</div>
+<div id="box3" class="myboxes">
+  Pop outs interface
+</div>
+
+<button class="button" onclick="document.getElementById('box2').style=display='block'">Popout interface</button>
+<button class="button" onclick="document.getElementById('box3').style=display='block'">Popout interface</button>
+<p>More page content</p>
+
+
+</body>
 </html>

@@ -10,11 +10,88 @@ body {
     background-size: cover;
 }
 
+.logo{
+  width: 100%;
+  display:flex;
+  justify-content: center;
+}
+
+.centerlized{
+  display:flex;
+  justify-content: center;
+}
+
 .about{
     background:rgba(57, 91, 137,0.5);
     width: fit-content;
+    border-radius: 6px;
     padding: 8px;
 }
 h3{
     margin: 0;
 }
+
+a{
+    text-decoration: none;
+}
+
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  .popup .popuptext {
+    visibility: hidden;
+    width: 100px;
+    height: fit-content;
+    background-color: #395b89;
+    color: #395b89;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    right: -165%;
+    margin-left: -80px;
+  }
+
+  .popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s
+  }
+  
+  @-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+  
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+  }
+
+  .button{
+    background-color:rgba(57, 91, 137);
+    font-family: "Andy";
+    font-size: medium;
+    border: #395b89;
+    border-radius: 6px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .myboxes{
+    background-color: #395b89;
+    width: fit-content;
+    border-radius: 6px;
+    padding: 1%;
+  }
+
+  .head1{
+    background-color: #395b89;
+    border-radius: 6px;
+  }
